@@ -16,7 +16,17 @@ const addMovie = function(event){
    movie.appendChild(deleteBtn)
    const ul = document.querySelector('ul')
    ul.appendChild(movie)
+//    message.textContent = `${movieTitle.textContent} added to list.`
+//    revealMessage()
+    addedMessage(movieTitle)
    inputField.value = ''
+   
+   
+}
+
+const addedMessage = function(movieTitle){
+    message.textContent = `${movieTitle.textContent} added to list.`
+    revealMessage()
 }
 
 const form = document.querySelector('form')
